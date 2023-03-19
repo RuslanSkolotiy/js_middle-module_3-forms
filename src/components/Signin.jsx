@@ -23,22 +23,22 @@ const Signin = function ({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit} onChange={handleChange}>
             <TextComponent
-                label="Email"
-                placeholder="Your email"
+                label="Почта"
+                placeholder="Ваш email"
                 name="email"
                 type="email"
                 icon={<IconAt size="0.8rem" />}
                 withAsterisk
             />
             <TextComponent
-                label="Password"
-                placeholder="Your password"
+                label="Пароль"
+                placeholder="Ваш пароль"
                 name="password"
                 type="password"
                 withAsterisk
             />
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit">Войти</button>
             </div>
         </form>
     );

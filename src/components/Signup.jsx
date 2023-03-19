@@ -27,40 +27,41 @@ const Signup = function ({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit} onChange={handleChange}>
             <TextComponent
-                label="Name"
-                placeholder="Your name"
+                label="Имя"
+                placeholder="Ваше имя"
                 name="name"
                 withAsterisk
             />
             <TextComponent
-                label="Nic"
-                placeholder="Your nicname"
+                label="Ник"
+                placeholder="Ваш никнейм"
                 name="nic"
                 withAsterisk
             />
             <TextComponent
-                label="Email"
-                placeholder="Your email"
+                label="Почта"
+                placeholder="Ваш email"
                 name="email"
                 type="email"
                 icon={<IconAt size="0.8rem" />}
                 withAsterisk
             />
             <TextComponent
-                label="Password"
-                placeholder="Your password"
+                label="Пароль"
+                placeholder="Ваш пароль"
                 name="password"
                 type="password"
                 withAsterisk
             />
             <TextComponent
-                label="Retry password"
-                placeholder="Your password again"
+                label="Повторить пароль"
+                placeholder="Ваш пароль еще раз"
                 name="retry_password"
                 type="password"
                 withAsterisk
             />
             <div>
+                <div>Пол</div>
                 <label>
                     Male <input name="sex" type="radio" value="Male" />
                 </label>
@@ -70,7 +71,7 @@ const Signup = function ({ onSubmit }) {
             </div>
 
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit">Зарегестрироваться</button>
             </div>
         </form>
     );
